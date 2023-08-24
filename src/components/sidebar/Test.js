@@ -5,10 +5,8 @@ import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -20,6 +18,18 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+
+import { ReactComponent as Logo } from '../../img/icons/logo.svg'
+import { ReactComponent as Id } from '../../img/icons/id.svg'
+import { ReactComponent as Cube } from '../../img/icons/cube.svg'
+import { ReactComponent as Calculator } from '../../img/icons/calculater.svg'
+import { ReactComponent as Certificate } from '../../img/icons/certificate.svg'
+import { ReactComponent as Listdata } from '../../img/icons/listdata.svg'
+import { ReactComponent as Graph } from '../../img/icons/graph.svg'
+import { ReactComponent as Chart } from '../../img/icons/chart.svg'
+import { ReactComponent as Shield } from '../../img/icons/shield.svg'
+import { ReactComponent as Calendar } from '../../img/icons/calendar.svg'
+import { ReactComponent as Bank } from '../../img/icons/bank.svg'
 
 const drawerWidth = 240;
 
@@ -100,31 +110,45 @@ export default function MiniDrawer() {
     setOpen(false);
   };
 
+  console.log(Id,MailIcon,'salam')
+
   return (
+    
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
-        <Toolbar>
+        {/* <Toolbar>
+
+        </Toolbar> */}
+        
+
+
+      </AppBar>
+      <Drawer variant="permanent" open={open}>
+        <DrawerHeader>
+
+          <IconButton onClick={handleDrawerClose}
+                      sx={{
+                        marginRight: 1,
+                        ...(open && { display: 'block' }),
+                      }}
+          >
+            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+          </IconButton>
+          
           <IconButton
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
             sx={{
-              marginRight: 5,
+              marginRight: 0.5,
               ...(open && { display: 'none' }),
             }}
           >
             <MenuIcon />
           </IconButton>
 
-        </Toolbar>
-      </AppBar>
-      <Drawer variant="permanent" open={open}>
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-          </IconButton>
         </DrawerHeader>
         <Divider />
         <List>
@@ -138,6 +162,7 @@ export default function MiniDrawer() {
                   px: 2.5,
                 }}
               >
+
                 <ListItemIcon
                   sx={{
                     minWidth: 0,
@@ -145,13 +170,21 @@ export default function MiniDrawer() {
                     justifyContent: 'center',
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {index===0? <Id className='id' />:<Cube className='id'/> }
+
+                  
+                  
+
                 </ListItemIcon>
+                
+                
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
               
             </ListItem>
           ))}
+          {/* <Id className='id' />
+          <Cube /> */}
         </List>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>

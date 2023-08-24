@@ -4,7 +4,15 @@
   box-sizing: border-box;
 }
 
-.MuiPaper-root {
+.MuiDrawer-root {
+  margin: 10px;
+}
+.MuiDrawer-root .MuiPaper-root {
   background-color: #266AEB;
   margin: 10px;
+  margin-top: 0;
+}
+
+.id {
+  position: absolute;
 }/*# sourceMappingURL=Test.css.map */
