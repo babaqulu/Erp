@@ -1,0 +1,14 @@
+.profileSiteWrapper {
+  display: flex;
+  width: 18%;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  margin-bottom: 100px;
+}
+.profileSiteWrapper .profileSiteheader {
+  background-color: #266AEB;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 50px;
+}/*# sourceMappingURL=ProfileSite.css.map */

@@ -1,6 +1,46 @@
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+} */
+
+.wrapper{
+  width: 100%;
+  padding: 1% 1%;
+  display: flex;
+  justify-content: space-between;
 }
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tableSection{
+  width: 93%;
+  padding: 1% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: flex-end;
+  border:1px solid #ECECEE;
+  border-radius: 20px;
+}
+
+.qaimelerText{
+  margin-bottom: 20px;
+}
+
+
+.minetable{
+  box-shadow: 0!important;
+}
+
+.MuiPaginationItem-previousNext:hover{
+  border-radius: 50%;
+  border: 1px solid #787878;
+}
+
 

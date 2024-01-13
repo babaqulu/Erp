@@ -1,0 +1,89 @@
+.statusDropdown {
+  width: 253px;
+  height: 262px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 4px 55px 0px rgba(0, 0, 0, 0.07);
+  padding: 5px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+}
+.statusDropdown .statusSelection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.statusDropdown .statusSelection button {
+  display: flex;
+  width: 213px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+.statusDropdown .statusSelection .first {
+  color: #488C6E;
+  background: #ECFDF3;
+}
+.statusDropdown .statusSelection .first:active {
+  border: 1px solid #488C6E;
+}
+.statusDropdown .statusSelection .second {
+  color: #E0B300;
+  background: #FFFAE8;
+}
+.statusDropdown .statusSelection .second:active {
+  border: 1px solid #E0B300;
+}
+.statusDropdown .statusSelection .third {
+  color: #FF463D;
+  background: #FFF7F6;
+}
+.statusDropdown .statusSelection .third:active {
+  border: 1px solid #FF463D;
+}
+.statusDropdown .statusSelection .first, .statusDropdown .statusSelection .second {
+  margin-bottom: 20px;
+}
+.statusDropdown .dropdownCheck {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.statusDropdown .dropdownCheck button {
+  display: flex;
+  width: 98px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  cursor: pointer;
+}
+.statusDropdown .dropdownCheck button:nth-child(1) {
+  border: 1px solid #266AEB;
+  background-color: transparent;
+  color: #266AEB;
+}
+.statusDropdown .dropdownCheck button:nth-child(2) {
+  background: #266AEB;
+  border: none;
+  color: white;
+}/*# sourceMappingURL=DropDown.css.map */
